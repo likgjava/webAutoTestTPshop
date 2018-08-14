@@ -54,7 +54,8 @@ class GoodsDetailProxy:
         self.goods_detail_handle.click_join_cart()
 
     def is_join_success(self):
-        DriverUtil.get_driver().switch_to.frame("layui-layer-iframe1")
+        frame = DriverUtil.get_driver().find_element_by_tag_name("iframe")
+        DriverUtil.get_driver().switch_to.frame(frame)
         join_result = self.goods_detail_handle.get_join_result()
         return "添加成功" in join_result
 
