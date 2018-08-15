@@ -1,0 +1,65 @@
+2018-08-14 16:31:52,396 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-14 16:31:52,396 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-14 16:31:52,397 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163152.html'
+Traceback (most recent call last):
+  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
+    with open(report_file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163152.html'
+2018-08-14 16:31:52,397 INFO [root] [utils.py(get_driver:40)] - get_driver
+2018-08-14 16:32:37,842 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-14 16:32:37,843 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-14 16:32:37,844 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163237.html'
+2018-08-14 16:32:37,844 INFO [root] [utils.py(get_driver:40)] - get_driver
+2018-08-14 16:33:11,283 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-14 16:33:11,283 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-14 16:33:11,283 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163311.html'
+2018-08-14 16:33:11,283 ERROR [root] [run_suite.py(<module>:28)] - [Errno 2] No such file or directory: './report/report20180814-163311.html'
+Traceback (most recent call last):
+  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
+    with open(report_file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163311.html'
+2018-08-14 16:33:11,284 INFO [root] [utils.py(get_driver:40)] - get_driver
+2018-08-14 16:38:58,471 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-14 16:38:58,471 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-14 16:38:58,473 INFO [root] [utils.py(get_driver:40)] - get_driver
+2018-08-14 16:39:44,871 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-14 16:39:44,872 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-14 16:39:44,872 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163944.html'
+Traceback (most recent call last):
+  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
+    with open(report_file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163944.html'
+2018-08-14 16:39:44,872 INFO [root] [utils.py(get_driver:40)] - get_driver
+2018-08-15 09:41:46,314 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-15 09:41:46,323 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-15 09:41:46,324 ERROR [root] [run_suite.py(<module>:24)] - [Errno 2] No such file or directory: './report/report20180815-094146.html'
+Traceback (most recent call last):
+  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
+    with open(report_file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './report/report20180815-094146.html'
+2018-08-15 09:41:46,324 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:43:51,650 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-15 09:43:51,650 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-15 09:43:51,652 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:43:59,156 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:43:59,156 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:01,759 INFO [root] [test_login.py(test_login:59)] - username=13012345678 password=123456 code=8888 expect=µÇÂ¼³É¹¦
+2018-08-15 09:44:02,144 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,786 ERROR [root] [test_login.py(test_login:75)] - False is not true
+Traceback (most recent call last):
+  File "D:\PycharmProjects\webAutoTestTPshop\script\test_login.py", line 64, in test_login
+    self.assertTrue(False)
+  File "D:\software\Python36\lib\unittest\case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+2018-08-15 09:44:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:02,793 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:16,058 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:19,056 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:21,033 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-15 09:44:28,491 INFO [root] [utils.py(get_driver:58)] - get_driver

@@ -1,11 +1,13 @@
+import logging
 import time
-import traceback
 import unittest
 
 from script.test_cart import TestCart
 from script.test_login import TestLogin
 from tools.HTMLTestRunner import HTMLTestRunner
 from utils import DriverUtil
+
+import log_conf
 
 try:
     DriverUtil.set_auto_quit(False)
@@ -18,7 +20,7 @@ try:
         runner = HTMLTestRunner(f, title="TPshop商城自动化测试报告", description="Win10.Firefox")
         runner.run(suite)
 except Exception as e:
-    traceback.print_exc()
+    logging.exception(e)
 finally:
     DriverUtil.set_auto_quit(True)
     DriverUtil.quit_driver()

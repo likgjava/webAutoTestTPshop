@@ -1,4 +1,6 @@
+import logging
 import os
+import time
 
 from selenium import webdriver
 
@@ -11,6 +13,23 @@ def get_data_path():
     path = os.path.dirname(os.path.abspath(__file__)) + "/data/"
     print("path=", path)
     return path
+
+
+def get_screenshot_path():
+    """
+    获取保存截图所在路径
+    :return: 存放截图的绝对路径
+    """
+    path = os.path.dirname(os.path.abspath(__file__)) + "/screenshot/"
+    print("screenshot=", path)
+    return path
+
+
+def screenshot(case):
+    """"""
+    t = time.strftime("%Y%m%d-%H%M%S")
+    img_path = get_screenshot_path() + "{}-{}.png".format(case._testMethodName, t)
+    DriverUtil.get_driver().get_screenshot_as_file(img_path)
 
 
 def get_tips_msg():
@@ -36,6 +55,7 @@ class DriverUtil:
         获取浏览器驱动对象，并完成初始化设置
         :return: 浏览器驱动对象
         """
+        logging.info("get_driver")
         if DriverUtil._driver is None:
             DriverUtil._driver = webdriver.Firefox()
             DriverUtil._driver.maximize_window()
@@ -57,6 +77,3 @@ class DriverUtil:
         设置测试类运行完毕后，是否自动关闭驱动对象
         """
         DriverUtil._auto_quit = auto_quit
-
-
-

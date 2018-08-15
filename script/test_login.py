@@ -1,5 +1,7 @@
 import json
+import sys
 import unittest
+import logging
 
 from parameterized import parameterized
 
@@ -43,20 +45,22 @@ class TestLogin(unittest.TestCase):
         self.index_proxy.to_login_page()
 
     # 登录
-    @parameterized.expand([('13012345678', '123456', '8888', '登录成功')])
+    @parameterized.expand(load_data)
     def test_login(self, username, password, code, expect):
-        print('username={} password={} code={} expect={}'.
-              format(username, password, code, expect))
+        logging.info('username={} password={} code={} expect={}'.
+                     format(username, password, code, expect))
         try:
             # 登录
             self.login_proxy.login(username, password, code)
+
+            self.assertTrue(False)
 
             # 登录成功
             if "登录成功" == expect:
                 # 判断是否为‘我的商城’页面
                 is_home_page = self.home_proxy.is_home_page()
                 self.assertTrue(is_home_page)
-        except Exception:
-            # 截图
-            DriverUtil.get_driver().get_screenshot_as_file("test")
+        except Exception as e:
+            utils.screenshot(self)
+            logging.exception(e)
             raise
