@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+import utils
 from base.base_page import BasePage, BaseHandle
 from utils import DriverUtil
 
@@ -20,6 +21,8 @@ class IndexPage(BasePage):
         self.my_cart = (By.ID, "hd-my-cart")
         # 登录链接
         self.login_link = (By.LINK_TEXT, "登录")
+        # 我的订单链接
+        self.my_order_link = (By.LINK_TEXT, "我的订单")
 
     def find_search_input(self):
         return self.find_element(self.search_input)
@@ -32,6 +35,9 @@ class IndexPage(BasePage):
 
     def find_login_link(self):
         return self.find_element(self.login_link)
+
+    def find_my_order_link(self):
+        return self.find_element(self.my_order_link)
 
 
 class IndexHandle(BaseHandle):
@@ -53,6 +59,9 @@ class IndexHandle(BaseHandle):
 
     def click_login_link(self):
         self.index_page.find_login_link().click()
+
+    def click_my_order_link(self):
+        self.index_page.find_my_order_link().click()
 
 
 class IndexProxy:
@@ -83,3 +92,10 @@ class IndexProxy:
     # 进入首页
     def to_index_page(self):
         DriverUtil.get_driver().get("http://localhost")
+
+    # 进入我的订单页面
+    def to_my_order_page(self):
+        self.index_handle.click_my_order_link()
+
+        # 切换到新窗口
+        utils.switch_new_window()

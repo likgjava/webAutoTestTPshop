@@ -1,8 +1,6 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
 
 from base.base_page import BasePage, BaseHandle
-from utils import DriverUtil
 
 
 class CartPage(BasePage):
@@ -19,14 +17,20 @@ class CartPage(BasePage):
         self.remove_goods = (By.ID, "removeGoods")
         # 空购物车
         self.empty_cart = (By.CLASS_NAME, "shopcar_empty")
+        # 去结算
+        self.go_balance = (By.LINK_TEXT, "去结算")
 
     def find_check_all(self):
         return self.find_element(self.check_all)
 
     def find_remove_goods(self):
         return self.find_element(self.remove_goods)
+
     def find_empty_cart(self):
         return self.find_element(self.empty_cart)
+
+    def find_go_balance(self):
+        return self.find_element(self.go_balance)
 
 
 class CartHandle(BaseHandle):
@@ -46,6 +50,9 @@ class CartHandle(BaseHandle):
 
     def is_empty_cart(self):
         return self.cart_page.find_empty_cart().is_displayed()
+
+    def click_go_balance(self):
+        self.cart_page.find_go_balance().click()
 
 
 class CartProxy:
@@ -67,4 +74,6 @@ class CartProxy:
     def is_empty_cart(self):
         return self.cart_handle.is_empty_cart()
 
-
+    # 去结算
+    def go_balance(self):
+        return self.cart_handle.click_go_balance()

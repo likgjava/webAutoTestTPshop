@@ -1,7 +1,6 @@
 import json
-import sys
-import unittest
 import logging
+import unittest
 
 from parameterized import parameterized
 

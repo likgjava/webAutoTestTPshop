@@ -62,6 +62,7 @@ class TestCart(unittest.TestCase):
         self.assertTrue(join_success)
 
     # 清空购物车
+    @unittest.skip
     def test_clean_cart(self):
         # 进入购物车
         self.index_proxy.to_cart_page()

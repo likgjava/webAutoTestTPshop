@@ -41,6 +41,31 @@ def get_tips_msg():
     return msg
 
 
+def exist_text(text):
+    """
+    判断页面中是否存在指定的文本内容
+    :param text: 文本内容
+    :return: True:存在; False:不存在
+    """
+    try:
+        xpath = "//*[contains(text(), '{}')]".format(text)
+        element = DriverUtil.get_driver().find_element_by_xpath(xpath)
+        return element is not None
+    except Exception:
+        print("current page not contains [{}]".format(text))
+        return False
+
+
+def switch_new_window():
+    """
+    切换到新窗口
+    """
+    # 等待一下新窗口的打开
+    time.sleep(3)
+    driver = DriverUtil.get_driver()
+    driver.switch_to.window(driver.window_handles[-1])
+
+
 class DriverUtil:
     """
     浏览器驱动工具类
@@ -55,11 +80,11 @@ class DriverUtil:
         获取浏览器驱动对象，并完成初始化设置
         :return: 浏览器驱动对象
         """
-        logging.info("get_driver")
         if DriverUtil._driver is None:
+            logging.info("init driver...")
             DriverUtil._driver = webdriver.Firefox()
             DriverUtil._driver.maximize_window()
-            DriverUtil._driver.implicitly_wait(10)
+            DriverUtil._driver.implicitly_wait(20)
             DriverUtil._driver.get("http://localhost")
         return DriverUtil._driver
 

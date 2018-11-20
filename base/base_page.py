@@ -1,4 +1,5 @@
 from utils import DriverUtil
+import logging
 
 
 class BasePage:
@@ -10,7 +11,7 @@ class BasePage:
         self.driver = DriverUtil.get_driver()
 
     def find_element(self, location):
-        print("location=", location)
+        logging.info("location={}".format(location))
         return self.driver.find_element(location[0], location[1])
 
 
