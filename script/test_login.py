@@ -53,7 +53,7 @@ class TestLogin(unittest.TestCase):
             # 登录
             self.login_proxy.login(username, password, code)
 
-            self.assertTrue(False)
+            # self.assertTrue(False)
 
             # 登录成功
             if "登录成功" == expect:

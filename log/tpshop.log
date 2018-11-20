@@ -1,65 +1,84 @@
-2018-08-14 16:31:52,396 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-14 16:31:52,396 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-14 16:31:52,397 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163152.html'
+2018-08-26 22:49:31,729 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-26 22:49:31,730 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-26 22:49:31,731 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:40,336 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:40,337 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:42,308 INFO [root] [test_login.py(test_login:51)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2018-08-26 22:49:42,690 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,371 ERROR [root] [test_login.py(test_login:65)] - False is not true
 Traceback (most recent call last):
-  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
-    with open(report_file, "r") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163152.html'
-2018-08-14 16:31:52,397 INFO [root] [utils.py(get_driver:40)] - get_driver
-2018-08-14 16:32:37,842 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-14 16:32:37,843 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-14 16:32:37,844 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163237.html'
-2018-08-14 16:32:37,844 INFO [root] [utils.py(get_driver:40)] - get_driver
-2018-08-14 16:33:11,283 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-14 16:33:11,283 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-14 16:33:11,283 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163311.html'
-2018-08-14 16:33:11,283 ERROR [root] [run_suite.py(<module>:28)] - [Errno 2] No such file or directory: './report/report20180814-163311.html'
-Traceback (most recent call last):
-  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
-    with open(report_file, "r") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163311.html'
-2018-08-14 16:33:11,284 INFO [root] [utils.py(get_driver:40)] - get_driver
-2018-08-14 16:38:58,471 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-14 16:38:58,471 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-14 16:38:58,473 INFO [root] [utils.py(get_driver:40)] - get_driver
-2018-08-14 16:39:44,871 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-14 16:39:44,872 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-14 16:39:44,872 ERROR [root] [run_suite.py(<module>:27)] - [Errno 2] No such file or directory: './report/report20180814-163944.html'
-Traceback (most recent call last):
-  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
-    with open(report_file, "r") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './report/report20180814-163944.html'
-2018-08-14 16:39:44,872 INFO [root] [utils.py(get_driver:40)] - get_driver
-2018-08-15 09:41:46,314 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-15 09:41:46,323 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-15 09:41:46,324 ERROR [root] [run_suite.py(<module>:24)] - [Errno 2] No such file or directory: './report/report20180815-094146.html'
-Traceback (most recent call last):
-  File "D:/PycharmProjects/webAutoTestTPshop/run_suite.py", line 20, in <module>
-    with open(report_file, "r") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './report/report20180815-094146.html'
-2018-08-15 09:41:46,324 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:43:51,650 INFO [root] [log_conf.py(<module>:25)] - hello
-2018-08-15 09:43:51,650 ERROR [root] [log_conf.py(<module>:26)] - error
-2018-08-15 09:43:51,652 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:43:59,156 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:43:59,156 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:01,759 INFO [root] [test_login.py(test_login:59)] - username=13012345678 password=123456 code=8888 expect=登录成功
-2018-08-15 09:44:02,144 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,786 ERROR [root] [test_login.py(test_login:75)] - False is not true
-Traceback (most recent call last):
-  File "D:\PycharmProjects\webAutoTestTPshop\script\test_login.py", line 64, in test_login
+  File "D:\PycharmProjects\webAutoTestTPshop\script\test_login.py", line 56, in test_login
     self.assertTrue(False)
   File "D:\software\Python36\lib\unittest\case.py", line 682, in assertTrue
     raise self.failureException(msg)
 AssertionError: False is not true
-2018-08-15 09:44:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:02,793 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:16,058 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:19,056 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:21,033 INFO [root] [utils.py(get_driver:58)] - get_driver
-2018-08-15 09:44:28,491 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,415 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:43,416 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:54,397 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:56,681 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:49:58,275 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:05,542 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:15,251 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-26 22:50:15,251 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-26 22:50:15,252 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:23,477 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:23,477 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,090 INFO [root] [test_login.py(test_login:51)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2018-08-26 22:50:25,434 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,986 ERROR [root] [test_login.py(test_login:65)] - False is not true
+Traceback (most recent call last):
+  File "D:\PycharmProjects\webAutoTestTPshop\script\test_login.py", line 56, in test_login
+    self.assertTrue(False)
+  File "D:\software\Python36\lib\unittest\case.py", line 682, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+2018-08-26 22:50:25,987 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:25,988 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:39,636 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:41,872 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:43,364 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:50:50,049 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:51:48,065 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-26 22:51:48,065 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-26 22:51:48,066 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:51:55,859 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:51:55,859 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:51:58,304 INFO [root] [test_login.py(test_login:51)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2018-08-26 22:52:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,791 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:02,792 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:09,204 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:10,474 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:11,722 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:52:19,218 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:25,053 INFO [root] [log_conf.py(<module>:25)] - hello
+2018-08-26 22:59:25,053 ERROR [root] [log_conf.py(<module>:26)] - error
+2018-08-26 22:59:25,054 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:33,233 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:33,233 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:34,923 INFO [root] [test_login.py(test_login:51)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2018-08-26 22:59:39,673 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,674 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,674 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,674 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,675 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,675 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:39,675 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:52,316 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:53,578 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 22:59:54,010 INFO [root] [utils.py(get_driver:58)] - get_driver
+2018-08-26 23:00:00,926 INFO [root] [utils.py(get_driver:58)] - get_driver
