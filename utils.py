@@ -11,7 +11,7 @@ def get_data_path():
     :return: 数据文件的绝对路径
     """
     path = os.path.dirname(os.path.abspath(__file__)) + "/data/"
-    print("path=", path)
+    logging.info("path={}".format(path))
     return path
 
 
@@ -51,8 +51,9 @@ def exist_text(text):
         xpath = "//*[contains(text(), '{}')]".format(text)
         element = DriverUtil.get_driver().find_element_by_xpath(xpath)
         return element is not None
-    except Exception:
+    except Exception as e:
         print("current page not contains [{}]".format(text))
+        logging.exception(e)
         return False
 
 
@@ -82,7 +83,7 @@ class DriverUtil:
         """
         if DriverUtil._driver is None:
             logging.info("init driver...")
-            DriverUtil._driver = webdriver.Firefox()
+            DriverUtil._driver = webdriver.Chrome()
             DriverUtil._driver.maximize_window()
             DriverUtil._driver.implicitly_wait(20)
             DriverUtil._driver.get("http://localhost")

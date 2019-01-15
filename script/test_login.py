@@ -23,7 +23,7 @@ def load_data():
                               login_data.get("password"),
                               login_data.get("code"),
                               login_data.get("expect")))
-    print("test_data=", test_data)
+    logging.info("test_data={}".format(test_data))
     return test_data
 
 

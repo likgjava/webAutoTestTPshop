@@ -3,7 +3,7 @@ import os
 
 # 工程目录
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print(BASE_DIR)
+# print(BASE_DIR)
 
 
 def init_log_config():
@@ -30,7 +30,7 @@ def init_log_config():
     logger.addHandler(fh)
 
 # 初始化日志配置
-init_log_config()
+# init_log_config()
 
-logging.info("hello")
-logging.error("error")
+# logging.info("hello")
+# logging.error("error")
