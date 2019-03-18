@@ -13,10 +13,10 @@ def init_log_config():
 
     # 日志输出格式
     fmt = "%(asctime)s %(levelname)s [%(filename)s(%(funcName)s:%(lineno)d)] - %(message)s"
+    formatter = logging.Formatter(fmt)
 
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
-    formatter = logging.Formatter(fmt)
 
     # 输出到控制台
     sh = logging.StreamHandler()
@@ -25,7 +25,8 @@ def init_log_config():
 
     # 输出到文件，每日一个文件
     log_path = os.path.join(BASE_DIR, "log", "tpshop.log")
-    fh = logging.handlers.TimedRotatingFileHandler(log_path, when='MIDNIGHT', interval=1, backupCount=3)
+    fh = logging.handlers.TimedRotatingFileHandler(log_path, when='MIDNIGHT', interval=1,
+                                                   backupCount=3, encoding="UTF-8")
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 

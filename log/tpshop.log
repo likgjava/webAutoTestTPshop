@@ -1,0 +1,17 @@
+2019-01-16 17:42:23,499 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-01-16 17:42:23,545 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-01-16 17:42:23,558 INFO [test_login.py(load_data:26)] - test_data=[('13012345678', '123456', '8888', '登录成功')]
+2019-01-16 17:42:23,715 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-01-16 17:42:23,731 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-01-16 17:42:23,798 INFO [utils.py(get_driver:85)] - init driver...
+2019-01-16 17:42:31,685 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-01-16 17:42:34,326 INFO [test_login.py(test_login:50)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2019-01-16 17:42:34,327 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-01-16 17:42:34,498 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-01-16 17:42:34,645 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-01-16 17:42:34,802 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-01-16 17:42:34,898 INFO [base_page.py(find_element:14)] - location=('link text', '我的商城')
+2019-01-16 17:42:42,379 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-01-16 17:42:42,547 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-01-16 17:42:44,664 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-01-16 17:42:45,268 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
