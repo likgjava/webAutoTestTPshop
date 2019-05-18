@@ -3,7 +3,6 @@ import os
 
 # 工程目录
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# print(BASE_DIR)
 
 
 def init_log_config():
@@ -11,12 +10,12 @@ def init_log_config():
     初始化日志配置
     """
 
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
     # 日志输出格式
     fmt = "%(asctime)s %(levelname)s [%(filename)s(%(funcName)s:%(lineno)d)] - %(message)s"
     formatter = logging.Formatter(fmt)
-
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
 
     # 输出到控制台
     sh = logging.StreamHandler()
@@ -29,9 +28,3 @@ def init_log_config():
                                                    backupCount=3, encoding="UTF-8")
     fh.setFormatter(formatter)
     logger.addHandler(fh)
-
-# 初始化日志配置
-# init_log_config()
-
-# logging.info("hello")
-# logging.error("error")

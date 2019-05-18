@@ -5,16 +5,6 @@ import time
 from selenium import webdriver
 
 
-def get_data_path():
-    """
-    获取数据文件所在路径
-    :return: 数据文件的绝对路径
-    """
-    path = os.path.dirname(os.path.abspath(__file__)) + "/data/"
-    logging.info("path={}".format(path))
-    return path
-
-
 def get_screenshot_path():
     """
     获取保存截图所在路径

@@ -4,13 +4,10 @@ import unittest
 
 from parameterized import parameterized
 
+import config
 import utils
 from page.cart_page import CartProxy
-from page.goods_detail_page import GoodsDetailProxy
-from page.goods_search_page import GoodsSearchProxy
-from page.home_page import HomeProxy
 from page.index_page import IndexProxy
-from page.login_page import LoginProxy
 from page.my_order_page import MyOrderProxy
 from page.order_page import OrderProxy
 from page.order_pay_page import OrderPayProxy
@@ -22,7 +19,7 @@ def order_data():
     下订单-测试数据
     """
     test_data = []
-    with open(utils.get_data_path() + "order.json", encoding="utf-8") as f:
+    with open(config.BASE_DIR + "/data/order.json", encoding="utf-8") as f:
         json_data = json.load(f)
         data = json_data.get("test_order")
         test_data.append((data.get("expect")))
@@ -34,7 +31,7 @@ def order_pay_data():
     订单支付-测试数据
     """
     test_data = []
-    with open(utils.get_data_path() + "order.json", encoding="utf-8") as f:
+    with open(config.BASE_DIR + "/data/order.json", encoding="utf-8") as f:
         json_data = json.load(f)
         data = json_data.get("test_order_pay")
         test_data.append((data.get("expect")))
@@ -45,11 +42,7 @@ class TestOrder(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.login_proxy = LoginProxy()
         cls.index_proxy = IndexProxy()
-        cls.home_proxy = HomeProxy()
-        cls.goods_search_proxy = GoodsSearchProxy()
-        cls.goods_detail_proxy = GoodsDetailProxy()
         cls.cart_proxy = CartProxy()
         cls.order_proxy = OrderProxy()
         cls.my_order_proxy = MyOrderProxy()

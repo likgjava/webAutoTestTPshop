@@ -1,26 +1,56 @@
-2019-05-17 22:06:43,281 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-05-17 22:06:43,331 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-05-17 22:06:43,332 INFO [test_login.py(load_data:26)] - test_data=[('13012345678', '123456', '8888', '登录成功')]
-2019-05-17 22:06:43,404 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-05-17 22:06:43,412 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-05-17 22:06:43,498 INFO [utils.py(get_driver:85)] - init driver...
-2019-05-17 22:06:51,787 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
-2019-05-17 22:06:53,394 INFO [test_login.py(test_login:50)] - username=13012345678 password=123456 code=8888 expect=登录成功
-2019-05-17 22:06:53,395 INFO [base_page.py(find_element:14)] - location=('id', 'username')
-2019-05-17 22:06:53,528 INFO [base_page.py(find_element:14)] - location=('id', 'password')
-2019-05-17 22:06:53,622 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
-2019-05-17 22:06:53,726 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
-2019-05-17 22:06:53,802 INFO [base_page.py(find_element:14)] - location=('link text', '我的商城')
-2019-05-17 22:07:00,607 INFO [base_page.py(find_element:14)] - location=('id', 'q')
-2019-05-17 22:07:00,750 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
-2019-05-17 22:07:03,320 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
-2019-05-17 22:07:11,880 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
-2019-05-17 22:07:13,655 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
-2019-05-17 22:07:15,999 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
-2019-05-17 22:07:18,312 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
-2019-05-17 22:07:23,039 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
-2019-05-17 22:07:30,571 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
-2019-05-17 22:07:33,723 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
-2019-05-17 22:07:36,260 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
-2019-05-17 22:07:39,432 INFO [base_page.py(find_element:14)] - location=('css selector', "input[value='pay_code=cod']")
-2019-05-17 22:07:40,526 INFO [base_page.py(find_element:14)] - location=('link text', '确认支付方式')
+2019-05-18 23:11:55,274 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
+2019-05-18 23:11:55,492 INFO [utils.py(get_driver:75)] - init driver...
+2019-05-18 23:12:06,998 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-05-18 23:12:08,811 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
+2019-05-18 23:12:08,812 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-05-18 23:12:08,939 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-05-18 23:12:09,029 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-05-18 23:12:09,131 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-05-18 23:12:17,447 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-05-18 23:12:19,700 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-05-18 23:12:25,739 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-05-18 23:12:33,134 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-05-18 23:12:36,260 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-05-18 23:12:39,246 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
+2019-05-18 23:13:29,535 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
+2019-05-18 23:13:29,769 INFO [utils.py(get_driver:75)] - init driver...
+2019-05-18 23:13:36,629 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-05-18 23:13:39,961 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
+2019-05-18 23:13:39,961 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-05-18 23:13:40,085 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-05-18 23:13:40,176 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-05-18 23:13:40,269 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-05-18 23:13:46,571 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-05-18 23:13:46,674 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-05-18 23:13:50,398 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-05-18 23:13:54,843 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-05-18 23:13:58,569 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
+2019-05-18 23:14:00,467 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-05-18 23:14:02,313 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-05-18 23:14:08,524 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-05-18 23:14:13,705 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-05-18 23:14:16,841 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-05-18 23:14:19,648 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
+2019-05-18 23:14:22,783 INFO [base_page.py(find_element:14)] - location=('css selector', "input[value='pay_code=cod']")
+2019-05-18 23:14:23,882 INFO [base_page.py(find_element:14)] - location=('link text', '确认支付方式')
+2019-05-18 23:16:25,517 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
+2019-05-18 23:16:25,704 INFO [utils.py(get_driver:75)] - init driver...
+2019-05-18 23:16:33,837 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-05-18 23:16:37,388 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
+2019-05-18 23:16:37,389 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-05-18 23:16:37,537 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-05-18 23:16:37,659 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-05-18 23:16:37,776 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-05-18 23:16:45,689 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-05-18 23:16:45,778 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-05-18 23:16:49,208 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-05-18 23:16:55,151 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-05-18 23:16:56,879 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
+2019-05-18 23:16:58,896 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-05-18 23:17:00,982 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-05-18 23:17:06,200 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-05-18 23:17:13,284 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-05-18 23:17:16,475 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-05-18 23:17:19,055 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
+2019-05-18 23:17:22,239 INFO [base_page.py(find_element:14)] - location=('css selector', "input[value='pay_code=cod']")
+2019-05-18 23:17:23,331 INFO [base_page.py(find_element:14)] - location=('link text', '确认支付方式')
