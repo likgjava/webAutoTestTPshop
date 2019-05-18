@@ -11,6 +11,7 @@ from utils import DriverUtil
 try:
     DriverUtil.set_auto_quit(False)
 
+    # 构建测试套件
     suite = unittest.TestSuite()
     suite.addTest(unittest.makeSuite(TestLogin))
     suite.addTest(unittest.makeSuite(TestCart))

@@ -4,21 +4,13 @@ import time
 
 from selenium import webdriver
 
-
-def get_screenshot_path():
-    """
-    获取保存截图所在路径
-    :return: 存放截图的绝对路径
-    """
-    path = os.path.dirname(os.path.abspath(__file__)) + "/screenshot/"
-    print("screenshot=", path)
-    return path
+import config
 
 
 def screenshot(case):
     """"""
     t = time.strftime("%Y%m%d-%H%M%S")
-    img_path = get_screenshot_path() + "{}-{}.png".format(case._testMethodName, t)
+    img_path = config.BASE_DIR + "/screenshot/{}-{}.png".format(case._testMethodName, t)
     DriverUtil.get_driver().get_screenshot_as_file(img_path)
 
 
@@ -61,35 +53,33 @@ class DriverUtil:
     """
     浏览器驱动工具类
     """
-
     _driver = None
     _auto_quit = True
 
-    @staticmethod
-    def get_driver():
+    @classmethod
+    def get_driver(cls):
         """
         获取浏览器驱动对象，并完成初始化设置
         :return: 浏览器驱动对象
         """
-        if DriverUtil._driver is None:
+        if cls._driver is None:
             logging.info("init driver...")
-            DriverUtil._driver = webdriver.Chrome()
-            DriverUtil._driver.maximize_window()
-            DriverUtil._driver.implicitly_wait(20)
-            DriverUtil._driver.get("http://localhost")
-        return DriverUtil._driver
+            cls._driver = webdriver.Chrome()
+            cls._driver.maximize_window()
+            cls._driver.implicitly_wait(30)
+            cls._driver.get("http://localhost")
+        return cls._driver
 
-    @staticmethod
-    def quit_driver():
+    @classmethod
+    def quit_driver(cls):
         """
         关闭浏览器驱动
         """
-        if DriverUtil._auto_quit:
-            DriverUtil.get_driver().quit()
+        if cls._auto_quit and cls._driver:
+            cls._driver.quit()
+            cls._driver = None
 
-    @staticmethod
-    def set_auto_quit(auto_quit):
-        """
-        设置测试类运行完毕后，是否自动关闭驱动对象
-        """
-        DriverUtil._auto_quit = auto_quit
+    @classmethod
+    def set_auto_quit(cls, auto_quit):
+        """设置是否自动退出驱动"""
+        cls._auto_quit = auto_quit
