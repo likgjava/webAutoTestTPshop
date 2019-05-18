@@ -11,7 +11,7 @@ class LoginPage(BasePage):
     def __init__(self):
         super().__init__()
 
-        # 用户名输入框
+        # 用户名
         self.username = (By.ID, "username")
         # 密码
         self.password = (By.ID, "password")

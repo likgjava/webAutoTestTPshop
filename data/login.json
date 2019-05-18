@@ -1,8 +1,8 @@
-{
-  "test_login": {
+[
+  {
     "username": "13012345678",
     "password": "123456",
     "code": "8888",
-    "expect": "登录成功"
+    "expect": "我的账户"
   }
-}
+]

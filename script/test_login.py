@@ -1,28 +1,27 @@
 import json
 import logging
+import time
 import unittest
 
 from parameterized import parameterized
 
+import config
 import utils
-from page.home_page import HomeProxy
 from page.index_page import IndexProxy
 from page.login_page import LoginProxy
 from utils import DriverUtil
 
 
+# 加载登录测试数据
 def load_data():
-    """
-    加载登录测试数据
-    """
     test_data = []
-    with open(utils.get_data_path() + "login.json", encoding="utf-8") as f:
+    with open(config.BASE_DIR + "/data/login.json", encoding="utf-8") as f:
         json_data = json.load(f)
-        for login_data in json_data.values():
-            test_data.append((login_data.get("username"),
-                              login_data.get("password"),
-                              login_data.get("code"),
-                              login_data.get("expect")))
+        for case_data in json_data:
+            test_data.append((case_data.get("username"),
+                              case_data.get("password"),
+                              case_data.get("code"),
+                              case_data.get("expect")))
     logging.info("test_data={}".format(test_data))
     return test_data
 
@@ -31,9 +30,9 @@ class TestLogin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.login_proxy = LoginProxy()
+        cls.driver = DriverUtil.get_driver()
         cls.index_proxy = IndexProxy()
-        cls.home_proxy = HomeProxy()
+        cls.login_proxy = LoginProxy()
 
     @classmethod
     def tearDownClass(cls):
@@ -43,22 +42,18 @@ class TestLogin(unittest.TestCase):
         # 进入登录页面
         self.index_proxy.to_login_page()
 
-    # 登录
     @parameterized.expand(load_data)
     def test_login(self, username, password, code, expect):
-        logging.info('username={} password={} code={} expect={}'.
-                     format(username, password, code, expect))
+        """登录"""
+        logging.info('username={} password={} code={} expect={}'.format(username, password, code, expect))
+        print("test_login start...")
         try:
             # 登录
             self.login_proxy.login(username, password, code)
 
-            # self.assertTrue(False)
-
-            # 登录成功
-            if "登录成功" == expect:
-                # 判断是否为‘我的商城’页面
-                is_home_page = self.home_proxy.is_home_page()
-                self.assertTrue(is_home_page)
+            # 断言
+            time.sleep(3)
+            self.assertIn(expect, self.driver.title)
         except Exception as e:
             utils.screenshot(self)
             logging.exception(e)

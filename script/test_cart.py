@@ -30,9 +30,7 @@ class TestCart(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.login_proxy = LoginProxy()
         cls.index_proxy = IndexProxy()
-        cls.home_proxy = HomeProxy()
         cls.goods_search_proxy = GoodsSearchProxy()
         cls.goods_detail_proxy = GoodsDetailProxy()
         cls.cart_proxy = CartProxy()

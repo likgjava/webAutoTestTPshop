@@ -1,17 +1,26 @@
-2019-01-16 17:42:23,499 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-01-16 17:42:23,545 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-01-16 17:42:23,558 INFO [test_login.py(load_data:26)] - test_data=[('13012345678', '123456', '8888', '��¼�ɹ�')]
-2019-01-16 17:42:23,715 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-01-16 17:42:23,731 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
-2019-01-16 17:42:23,798 INFO [utils.py(get_driver:85)] - init driver...
-2019-01-16 17:42:31,685 INFO [base_page.py(find_element:14)] - location=('link text', '��¼')
-2019-01-16 17:42:34,326 INFO [test_login.py(test_login:50)] - username=13012345678 password=123456 code=8888 expect=��¼�ɹ�
-2019-01-16 17:42:34,327 INFO [base_page.py(find_element:14)] - location=('id', 'username')
-2019-01-16 17:42:34,498 INFO [base_page.py(find_element:14)] - location=('id', 'password')
-2019-01-16 17:42:34,645 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
-2019-01-16 17:42:34,802 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
-2019-01-16 17:42:34,898 INFO [base_page.py(find_element:14)] - location=('link text', '�ҵ��̳�')
-2019-01-16 17:42:42,379 INFO [base_page.py(find_element:14)] - location=('id', 'q')
-2019-01-16 17:42:42,547 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
-2019-01-16 17:42:44,664 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), 'С��6')]")
-2019-01-16 17:42:45,268 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-05-17 22:06:43,281 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-05-17 22:06:43,331 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-05-17 22:06:43,332 INFO [test_login.py(load_data:26)] - test_data=[('13012345678', '123456', '8888', '登录成功')]
+2019-05-17 22:06:43,404 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-05-17 22:06:43,412 INFO [utils.py(get_data_path:14)] - path=D:\PycharmProjects\webAutoTestTPshop/data/
+2019-05-17 22:06:43,498 INFO [utils.py(get_driver:85)] - init driver...
+2019-05-17 22:06:51,787 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-05-17 22:06:53,394 INFO [test_login.py(test_login:50)] - username=13012345678 password=123456 code=8888 expect=登录成功
+2019-05-17 22:06:53,395 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-05-17 22:06:53,528 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-05-17 22:06:53,622 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-05-17 22:06:53,726 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-05-17 22:06:53,802 INFO [base_page.py(find_element:14)] - location=('link text', '我的商城')
+2019-05-17 22:07:00,607 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-05-17 22:07:00,750 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-05-17 22:07:03,320 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-05-17 22:07:11,880 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-05-17 22:07:13,655 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
+2019-05-17 22:07:15,999 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-05-17 22:07:18,312 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-05-17 22:07:23,039 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-05-17 22:07:30,571 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-05-17 22:07:33,723 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-05-17 22:07:36,260 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
+2019-05-17 22:07:39,432 INFO [base_page.py(find_element:14)] - location=('css selector', "input[value='pay_code=cod']")
+2019-05-17 22:07:40,526 INFO [base_page.py(find_element:14)] - location=('link text', '确认支付方式')

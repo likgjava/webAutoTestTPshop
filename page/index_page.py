@@ -6,26 +6,25 @@ from utils import DriverUtil
 
 
 class IndexPage(BasePage):
-    """
-    对象库层
-    """
-
     def __init__(self):
         super().__init__()
 
+        # 登录链接
+        self.login_link = (By.LINK_TEXT, "登录")
         # 搜索框
-        self.search_input = (By.ID, "q")
+        self.search = (By.ID, "q")
         # 搜索按钮
         self.search_btn = (By.CSS_SELECTOR, "[type='submit']")
         # 我的购物车
         self.my_cart = (By.ID, "hd-my-cart")
-        # 登录链接
-        self.login_link = (By.LINK_TEXT, "登录")
         # 我的订单链接
         self.my_order_link = (By.LINK_TEXT, "我的订单")
 
-    def find_search_input(self):
-        return self.find_element(self.search_input)
+    def find_login_link(self):
+        return self.find_element(self.login_link)
+
+    def find_search(self):
+        return self.find_element(self.search)
 
     def find_search_btn(self):
         return self.find_element(self.search_btn)
@@ -33,23 +32,19 @@ class IndexPage(BasePage):
     def find_my_cart(self):
         return self.find_element(self.my_cart)
 
-    def find_login_link(self):
-        return self.find_element(self.login_link)
-
     def find_my_order_link(self):
         return self.find_element(self.my_order_link)
 
 
 class IndexHandle(BaseHandle):
-    """
-    操作层
-    """
-
     def __init__(self):
         self.index_page = IndexPage()
 
-    def input_search_kw(self, kw):
-        self.input_text(self.index_page.find_search_input(), kw)
+    def click_login_link(self):
+        self.index_page.find_login_link().click()
+
+    def input_search(self, goods_name):
+        self.input_text(self.index_page.find_search(), goods_name)
 
     def click_search_btn(self):
         self.index_page.find_search_btn().click()
@@ -57,25 +52,18 @@ class IndexHandle(BaseHandle):
     def click_my_cart(self):
         self.index_page.find_my_cart().click()
 
-    def click_login_link(self):
-        self.index_page.find_login_link().click()
-
     def click_my_order_link(self):
         self.index_page.find_my_order_link().click()
 
 
 class IndexProxy:
-    """
-    业务层
-    """
-
     def __init__(self):
         self.index_handle = IndexHandle()
 
-    # 搜索关键字
-    def search_kw(self, kw):
-        # 输入关键字
-        self.index_handle.input_search_kw(kw)
+    # 搜索商品
+    def search_goods(self, goods_name):
+        # 输入商品名称
+        self.index_handle.input_search(goods_name)
         # 点击搜索按钮
         self.index_handle.click_search_btn()
 

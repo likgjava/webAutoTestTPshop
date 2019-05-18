@@ -4,7 +4,7 @@ import logging
 
 class BasePage:
     """
-    基类-对象库层
+    对象库层-基类
     """
 
     def __init__(self):
@@ -17,7 +17,7 @@ class BasePage:
 
 class BaseHandle:
     """
-    基类-操作层
+    操作层-基类
     """
 
     def input_text(self, element, text):
