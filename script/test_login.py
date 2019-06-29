@@ -18,8 +18,10 @@ def load_data():
     with open(config.BASE_DIR + "/data/login.json", encoding="utf-8") as f:
         json_data = json.load(f)
         for case_data in json_data:
-            test_data.append((case_data.get("username"), case_data.get("password"),
-                              case_data.get("code"), case_data.get("expect")))
+            test_data.append((case_data.get("username"),
+                              case_data.get("password"),
+                              case_data.get("code"),
+                              case_data.get("expect")))
     logging.info("test_data={}".format(test_data))
     return test_data
 

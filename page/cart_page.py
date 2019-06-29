@@ -41,6 +41,7 @@ class CartHandle(BaseHandle):
     def __init__(self):
         self.cart_page = CartPage()
 
+    # 全选所有商品
     def check_all_goods(self):
         if not self.cart_page.find_check_all().is_selected():
             self.cart_page.find_check_all().click()
