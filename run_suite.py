@@ -17,10 +17,12 @@ try:
     suite.addTest(unittest.makeSuite(TestCart))
     suite.addTest(unittest.makeSuite(TestOrder))
 
-    report_file = "./report/report{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
-    with open(report_file, "wb") as f:
-        runner = HTMLTestRunner(f, title="TPshop自动化测试报告", description="Win10.Firefox")
-        runner.run(suite)
+    unittest.TextTestRunner().run(suite)
+
+    # report_file = "./report/report{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
+    # with open(report_file, "wb") as f:
+    #     runner = HTMLTestRunner(f, title="TPshop自动化测试报告", description="Win10.Firefox")
+    #     runner.run(suite)
 except Exception as e:
     logging.exception(e)
 finally:

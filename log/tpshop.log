@@ -1,21 +1,70 @@
-2019-06-29 20:58:28,998 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
-2019-06-29 20:58:29,248 INFO [utils.py(get_driver:65)] - init driver...
-2019-06-29 20:58:43,907 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
-2019-06-29 20:58:46,950 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
-2019-06-29 20:58:46,951 INFO [base_page.py(find_element:14)] - location=('id', 'username')
-2019-06-29 20:58:47,078 INFO [base_page.py(find_element:14)] - location=('id', 'password')
-2019-06-29 20:58:47,191 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
-2019-06-29 20:58:47,322 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
-2019-06-29 20:58:58,350 INFO [base_page.py(find_element:14)] - location=('id', 'q')
-2019-06-29 20:58:58,467 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
-2019-06-29 20:59:02,027 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
-2019-06-29 20:59:12,461 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
-2019-06-29 20:59:17,229 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
-2019-06-29 20:59:19,882 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
-2019-06-29 20:59:23,254 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
-2019-06-29 20:59:28,951 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
-2019-06-29 20:59:37,917 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
-2019-06-29 20:59:41,029 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
-2019-06-29 20:59:47,553 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
-2019-06-29 20:59:50,683 INFO [base_page.py(find_element:14)] - location=('css selector', "input[value='pay_code=cod']")
-2019-06-29 20:59:54,797 INFO [base_page.py(find_element:14)] - location=('link text', '确认支付方式')
+2019-11-25 10:17:43,747 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
+2019-11-25 10:17:44,035 INFO [utils.py(get_driver:65)] - init driver...
+2019-11-25 10:18:01,593 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-11-25 10:18:04,401 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
+2019-11-25 10:18:04,402 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-11-25 10:18:04,546 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-11-25 10:18:04,663 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-11-25 10:18:04,768 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-11-25 10:18:15,912 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-11-25 10:18:16,028 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-11-25 10:18:19,147 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-11-25 10:18:31,342 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-11-25 10:18:33,837 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
+2019-11-25 10:19:06,780 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-11-25 10:19:13,665 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-11-25 10:19:19,456 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-11-25 10:19:49,589 ERROR [utils.py(exist_text:37)] - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), '订单提交成功，请您尽快付款')]"}
+  (Session info: chrome=78.0.3904.70)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\webAutoTestTPshop\utils.py", line 33, in exist_text
+    element = DriverUtil.get_driver().find_element_by_xpath(xpath)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), '订单提交成功，请您尽快付款')]"}
+  (Session info: chrome=78.0.3904.70)
+
+2019-11-25 10:19:52,442 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-11-25 10:19:55,555 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-11-25 10:20:06,965 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')
+2019-11-25 11:15:11,469 INFO [test_login.py(load_data:25)] - test_data=[('13012345678', '123456', '8888', '我的账户')]
+2019-11-25 11:15:11,494 INFO [utils.py(get_driver:65)] - init driver...
+2019-11-25 11:15:25,218 INFO [base_page.py(find_element:14)] - location=('link text', '登录')
+2019-11-25 11:15:28,107 INFO [test_login.py(test_login:48)] - username=13012345678 password=123456 code=8888 expect=我的账户
+2019-11-25 11:15:28,107 INFO [base_page.py(find_element:14)] - location=('id', 'username')
+2019-11-25 11:15:28,243 INFO [base_page.py(find_element:14)] - location=('id', 'password')
+2019-11-25 11:15:28,364 INFO [base_page.py(find_element:14)] - location=('id', 'verify_code')
+2019-11-25 11:15:28,485 INFO [base_page.py(find_element:14)] - location=('name', 'sbtbutton')
+2019-11-25 11:15:38,708 INFO [base_page.py(find_element:14)] - location=('id', 'q')
+2019-11-25 11:15:38,820 INFO [base_page.py(find_element:14)] - location=('css selector', "[type='submit']")
+2019-11-25 11:15:41,497 INFO [base_page.py(find_element:14)] - location=('xpath', "//*[@class='shop_name2']/a[contains(text(), '小米6')]")
+2019-11-25 11:15:53,476 INFO [base_page.py(find_element:14)] - location=('id', 'join_cart')
+2019-11-25 11:15:55,931 INFO [base_page.py(find_element:14)] - location=('css selector', 'div.conect-title>span')
+2019-11-25 11:16:28,933 INFO [base_page.py(find_element:14)] - location=('id', 'hd-my-cart')
+2019-11-25 11:16:35,679 INFO [base_page.py(find_element:14)] - location=('link text', '去结算')
+2019-11-25 11:16:41,263 INFO [base_page.py(find_element:14)] - location=('link text', '提交订单')
+2019-11-25 11:17:11,409 ERROR [utils.py(exist_text:37)] - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), '订单提交成功，请您尽快付款')]"}
+  (Session info: chrome=78.0.3904.70)
+Traceback (most recent call last):
+  File "D:\PycharmProjects\webAutoTestTPshop\utils.py", line 33, in exist_text
+    element = DriverUtil.get_driver().find_element_by_xpath(xpath)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\PycharmProjects\webAutoTestTPshop\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), '订单提交成功，请您尽快付款')]"}
+  (Session info: chrome=78.0.3904.70)
+
+2019-11-25 11:17:14,291 INFO [base_page.py(find_element:14)] - location=('link text', '我的订单')
+2019-11-25 11:17:17,409 INFO [base_page.py(find_element:14)] - location=('link text', '待付款')
+2019-11-25 11:17:22,254 INFO [base_page.py(find_element:14)] - location=('link text', '立即支付')

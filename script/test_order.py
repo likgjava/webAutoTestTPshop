@@ -65,7 +65,7 @@ class TestOrder(unittest.TestCase):
         self.cart_proxy.go_balance()
 
         # 等待收货人加载
-        time.sleep(3)
+        time.sleep(5)
 
         # 提交订单
         self.order_proxy.submit_order()
